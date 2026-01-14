@@ -1108,7 +1108,7 @@ h1, h2, h3, .logo {
 }
 
 .pages h1 {
-  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-size: clamp(1.5rem, 5vw, 4rem);
   line-height: 1.1;
   border-left: 4px solid var(--accent);
   padding-left: 30px;
