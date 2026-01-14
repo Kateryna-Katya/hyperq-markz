@@ -5,29 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page 2</title>
-    <link rel="stylesheet" crossorigin href="/hyperq-markz/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/hyperq-markz/assets/styles-B5LlroSk.css">
   </head>
   <body>
     <header class="header">
   <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+      <nav class="header__nav">
+          <a href="/" class="logo">
+              Hyperq<span>Markz</span>
+          </a>
+
+          <ul class="nav-menu">
+              <li><a href="#hero" class="nav-link">Главная</a></li>
+              <li><a href="#analytics" class="nav-link">Аналитика</a></li>
+              <li><a href="#methods" class="nav-link">Методы</a></li>
+              <li><a href="#strategies" class="nav-link">Стратегии</a></li>
+              <li><a href="#insights" class="nav-link">Инсайты</a></li>
+              <li><a href="#cases" class="nav-link">Кейсы</a></li>
+          </ul>
+
+          <a href="#contact" class="btn btn--primary btn--header">
+              <span>Начать сейчас</span>
+              <i data-lucide="arrow-right"></i>
+          </a>
+
+          <button class="burger" aria-label="Menu">
+              <span></span>
+          </button>
+      </nav>
   </div>
 </header>
-
+<div class="mobile-menu-overlay">
+  <div class="mobile-menu-content">
+      <ul class="mobile-nav">
+          <li><a href="#hero">Главная</a></li>
+          <li><a href="#analytics">Аналитика</a></li>
+          <li><a href="#methods">Методы</a></li>
+          <li><a href="#strategies">Стратегии</a></li>
+          <li><a href="#insights">Инсайты</a></li>
+          <li><a href="#cases">Кейсы</a></li>
+          <li><a href="#contact" class="btn btn--primary">Начать сейчас</a></li>
+      </ul>
+  </div>
+</div>
 
     <main>
       <div class="container">
@@ -39,19 +59,57 @@
 
     <footer class="footer">
   <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+      <div class="footer__grid">
+          <div class="footer__info">
+              <a href="/" class="logo logo--footer">Hyperq<span>Markz</span></a>
+              <p class="footer__tagline">Инновационная технология стратегического роста и передовая цифровая инфраструктура для вашего бизнеса.</p>
+          </div>
+
+          <div class="footer__nav-group">
+              <h4 class="footer__title">Навигация</h4>
+              <ul class="footer__links">
+                  <li><a href="#hero">Главная</a></li>
+                  <li><a href="#analytics">Аналитика</a></li>
+                  <li><a href="#methods">Методы</a></li>
+                  <li><a href="#insights">Инсайты</a></li>
+              </ul>
+          </div>
+
+          <div class="footer__legal">
+              <h4 class="footer__title">Документы</h4>
+              <ul class="footer__links">
+                  <li><a href="privacy.html">Privacy Policy</a></li>
+                  <li><a href="cookies.html">Cookie Policy</a></li>
+                  <li><a href="terms.html">Terms of Service</a></li>
+                  <li><a href="return.html">Return Policy</a></li>
+                  <li><a href="disclaimer.html">Disclaimer</a></li>
+                  <li><a href="personal-data-policy.html">Data Policy</a></li>
+              </ul>
+          </div>
+
+          <div class="footer__contacts">
+              <h4 class="footer__title">Контакты</h4>
+              <ul class="contact-list">
+                  <li>
+                      <i data-lucide="map-pin"></i>
+                      <span>20-22 Wenlock Road, London, N1 7GU, United Kingdom</span>
+                  </li>
+                  <li>
+                      <i data-lucide="phone"></i>
+                      <a href="tel:+442079460123">+44 20 7946 0123</a>
+                  </li>
+                  <li>
+                      <i data-lucide="mail"></i>
+                      <a href="mailto:team@hyperq-markz.fit">team@hyperq-markz.fit</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+
+      <div class="footer__bottom">
+          <p>&copy; 2026 Hyperq-Markz. Все права защищены. Предложение активно только в странах ЕС.</p>
+      </div>
   </div>
 </footer>
-
   </body>
 </html>

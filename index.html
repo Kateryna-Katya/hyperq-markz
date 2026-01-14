@@ -1,56 +1,530 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/hyperq-markz/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyperq-Markz | Консалтинг нового поколения</title>
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
     <script type="module" crossorigin src="/hyperq-markz/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/hyperq-markz/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/hyperq-markz/assets/styles-B5LlroSk.css">
   </head>
   <body>
     <header class="header">
   <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+      <nav class="header__nav">
+          <a href="/" class="logo">
+              Hyperq<span>Markz</span>
+          </a>
+
+          <ul class="nav-menu">
+              <li><a href="#hero" class="nav-link">Главная</a></li>
+              <li><a href="#analytics" class="nav-link">Аналитика</a></li>
+              <li><a href="#methods" class="nav-link">Методы</a></li>
+              <li><a href="#strategies" class="nav-link">Стратегии</a></li>
+              <li><a href="#insights" class="nav-link">Инсайты</a></li>
+              <li><a href="#cases" class="nav-link">Кейсы</a></li>
+          </ul>
+
+          <a href="#contact" class="btn btn--primary btn--header">
+              <span>Начать сейчас</span>
+              <i data-lucide="arrow-right"></i>
+          </a>
+
+          <button class="burger" aria-label="Menu">
+              <span></span>
+          </button>
+      </nav>
   </div>
 </header>
+<div class="mobile-menu-overlay">
+  <div class="mobile-menu-content">
+      <ul class="mobile-nav">
+          <li><a href="#hero">Главная</a></li>
+          <li><a href="#analytics">Аналитика</a></li>
+          <li><a href="#methods">Методы</a></li>
+          <li><a href="#strategies">Стратегии</a></li>
+          <li><a href="#insights">Инсайты</a></li>
+          <li><a href="#cases">Кейсы</a></li>
+          <li><a href="#contact" class="btn btn--primary">Начать сейчас</a></li>
+      </ul>
+  </div>
+</div>
 
-
-    <main>
+    <main id="smooth-wrapper">
+      <div id="smooth-content">
       <!-- Loads the specified .html file -->
-      
+      <section id="hero" class="hero">
+  <div class="hero__bg-wrapper">
+      <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Abstract Innovation Structure" class="hero__bg-img">
+      <div class="hero__overlay"></div>
+  </div>
+
+  <div class="container">
+      <div class="hero__content">
+          <h1 class="hero__title reveal-text">
+              Воплотите мечты в реальность.<br>
+              <span class="text-accent">Технология нового поколения.</span>
+          </h1>
+          <p class="hero__subtitle reveal-text">
+              Инновационная цифровая инфраструктура и стратегии, которые меняют правила игры. Переосмыслите подход к развитию и оцените перспективы вашего проекта уже сегодня.
+          </p>
+
+          <div class="hero__actions reveal-text">
+              <a href="#contact" class="btn btn--primary">
+                  <span>Начать сейчас</span>
+                  <i data-lucide="arrow-right"></i>
+              </a>
+              <a href="#analytics" class="btn btn--outline">
+                  <span>Узнать детали</span>
+              </a>
+          </div>
+      </div>
+  </div>
+
+  <div class="hero__scroll-indicator">
+      <span>Scroll</span>
+      <div class="mouse"></div>
+  </div>
+</section>
+<section id="analytics" class="analytics section-padding">
+  <div class="container">
+      <div class="section-header">
+          <span class="section-tag">Инновации</span>
+          <h2 class="section-title">Аналитика, которая <br>меняет правила игры</h2>
+          <p class="section-description">
+              Мы используем AI-инструменты для реальных задач, превращая хаос данных в четкую стратегию роста.
+              Платформа уже доступна в Европе и адаптирована под британские стандарты консалтинга.
+          </p>
+      </div>
+
+      <div class="analytics__grid">
+          <div class="analytics-card">
+              <div class="analytics-card__icon">
+                  <i data-lucide="bar-chart-3"></i>
+              </div>
+              <h3 class="analytics-card__title">Цифровая инфраструктура</h3>
+              <p class="analytics-card__text">
+                  Передовая архитектура данных для оценки перспектив проекта в режиме реального времени.
+                  Никаких догадок — только факты.
+              </p>
+          </div>
+
+          <div class="analytics-card">
+              <div class="analytics-card__icon">
+                  <i data-lucide="cpu"></i>
+              </div>
+              <h3 class="analytics-card__title">AI-инструменты</h3>
+              <p class="analytics-card__text">
+                  Интеллектуальные алгоритмы для глубокого анализа рынка и прогнозирования трендов
+                  на базе инноваций 2026 года.
+              </p>
+          </div>
+
+          <div class="analytics-card">
+              <div class="analytics-card__icon">
+                  <i data-lucide="shield-check"></i>
+              </div>
+              <h3 class="analytics-card__title">Проверенный партнер</h3>
+              <p class="analytics-card__text">
+                  Экспертная поддержка на всех этапах внедрения. Методологии, доказавшие
+                  свою эффективность в крупных британских холдингах.
+              </p>
+          </div>
+      </div>
+  </div>
+</section>
+<section id="methods" class="methods section-padding">
+  <div class="container">
+      <div class="section-header">
+          <span class="section-tag">Методология</span>
+          <h2 class="section-title">Ваш путь к <br>масштабируемому росту</h2>
+      </div>
+
+      <div class="methods__timeline">
+          <div class="method-item">
+              <div class="method-item__number">01</div>
+              <div class="method-item__content">
+                  <h3 class="method-item__title">Построение стратегии роста</h3>
+                  <p class="method-item__text">
+                      На базе инноваций и анализа данных мы создаем дорожную карту. Пошаговый путь, понятный каждому участнику команды, без лишней воды.
+                  </p>
+                  <ul class="method-item__list">
+                      <li><i data-lucide="check-circle-2"></i> Глубокий аудит текущих процессов</li>
+                      <li><i data-lucide="check-circle-2"></i> Определение точек кратного роста</li>
+                  </ul>
+              </div>
+          </div>
+
+          <div class="method-item">
+              <div class="method-item__number">02</div>
+              <div class="method-item__content">
+                  <h3 class="method-item__title">Внедрение AI-инструментов</h3>
+                  <p class="method-item__text">
+                      Подключение занимает всего 2 минуты. Мы интегрируем решения, которые меняют правила игры в вашем секторе, автоматизируя рутину.
+                  </p>
+                  <ul class="method-item__list">
+                      <li><i data-lucide="check-circle-2"></i> Настройка цифровой инфраструктуры</li>
+                      <li><i data-lucide="check-circle-2"></i> Обучение ключевых сотрудников</li>
+                  </ul>
+              </div>
+          </div>
+
+          <div class="method-item">
+              <div class="method-item__number">03</div>
+              <div class="method-item__content">
+                  <h3 class="method-item__title">Масштабирование и поддержка</h3>
+                  <p class="method-item__text">
+                      Экспертная поддержка на всех этапах. Мы помогаем не только запустить проект, но и вывести его на уровень пассивного дохода и стабильной прибыли.
+                  </p>
+                  <ul class="method-item__list">
+                      <li><i data-lucide="check-circle-2"></i> Мониторинг эффективности 24/7</li>
+                      <li><i data-lucide="check-circle-2"></i> Адаптация под изменения рынка</li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<section id="strategies" class="strategies section-padding">
+  <div class="container">
+      <div class="section-header">
+          <span class="section-tag">Направления</span>
+          <h2 class="section-title">Стратегии роста на <br>базе инноваций</h2>
+          <p class="section-description">
+              Мы разработали готовые фреймворки для разных стадий бизнеса, от стартапа до международной экспансии в странах ЕС.
+          </p>
+      </div>
+
+      <div class="strategies__grid">
+          <div class="strategy-card">
+              <div class="strategy-card__content">
+                  <span class="strategy-card__label">Infrastructure</span>
+                  <h3 class="strategy-card__title">Цифровая трансформация</h3>
+                  <p class="strategy-card__text">Построение передовой цифровой инфраструктуры, которая работает на вас 24/7, минимизируя операционные риски.</p>
+                  <a href="#contact" class="strategy-card__link">
+                      <span>Оценить перспективы</span>
+                      <i data-lucide="chevron-right"></i>
+                  </a>
+              </div>
+              <div class="strategy-card__image">
+                  <img src="img/placeholder.png" alt="Digital Infrastructure">
+              </div>
+          </div>
+
+          <div class="strategy-card strategy-card--reverse">
+              <div class="strategy-card__content">
+                  <span class="strategy-card__label">Passive Income</span>
+                  <h3 class="strategy-card__title">Алгоритмы дохода</h3>
+                  <p class="strategy-card__text">Технология для пассивного дохода через AI-инструменты для реальных задач и автоматизированные бизнес-модели.</p>
+                  <a href="#contact" class="strategy-card__link">
+                      <span>Узнать детали</span>
+                      <i data-lucide="chevron-right"></i>
+                  </a>
+              </div>
+              <div class="strategy-card__image">
+                  <img src="img/placeholder.png" alt="Income Algorithms">
+              </div>
+          </div>
+
+          <div class="strategy-card">
+              <div class="strategy-card__content">
+                  <span class="strategy-card__label">Expansion</span>
+                  <h3 class="strategy-card__title">Масштабирование в Европе</h3>
+                  <p class="strategy-card__text">Платформа уже доступна в Европе. Мы помогаем расширить горизонты проекта и выйти на британский рынок с минимальными затратами.</p>
+                  <a href="#contact" class="strategy-card__link">
+                      <span>Запросить доступ</span>
+                      <i data-lucide="chevron-right"></i>
+                  </a>
+              </div>
+              <div class="strategy-card__image">
+                  <img src="img/placeholder.png" alt="European Expansion">
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<section id="insights" class="insights section-padding">
+  <div class="container">
+      <div class="section-header">
+          <span class="section-tag">Блог и аналитика</span>
+          <h2 class="section-title">Инсайты для <br>визионеров бизнеса</h2>
+          <div class="section-header__flex">
+              <p class="section-description">
+                  Решения, которые меняют правила игры. Мы делимся практическими кейсами и методологиями, доказавшими эффективность в 2026 году.
+              </p>
+              <a href="#contact" class="btn btn--outline">Смотреть все статьи</a>
+          </div>
+      </div>
+
+      <div class="insights__grid">
+          <article class="blog-card">
+              <div class="blog-card__image">
+                  <img src="img/placeholder.png" alt="AI Tools 2026">
+                  <span class="blog-card__category">Технологии</span>
+              </div>
+              <div class="blog-card__body">
+                  <div class="blog-card__meta">
+                      <span class="blog-card__date">14 Января, 2026</span>
+                      <span class="blog-card__read">5 мин чтения</span>
+                  </div>
+                  <h3 class="blog-card__title">AI-инструменты для реальных задач: что работает в Европе прямо сейчас?</h3>
+                  <p class="blog-card__excerpt">Разбираем передовую цифровую инфраструктуру и инструменты автоматизации, доступные для британских компаний.</p>
+                  <a href="#contact" class="blog-card__link">Читать далее <i data-lucide="arrow-up-right"></i></a>
+              </div>
+          </article>
+
+          <article class="blog-card">
+              <div class="blog-card__image">
+                  <img src="img/placeholder.png" alt="Passive Income">
+                  <span class="blog-card__category">Финансы</span>
+              </div>
+              <div class="blog-card__body">
+                  <div class="blog-card__meta">
+                      <span class="blog-card__date">10 Января, 2026</span>
+                      <span class="blog-card__read">8 мин чтения</span>
+                  </div>
+                  <h3 class="blog-card__title">Программа пассивного дохода: как переосмыслить подход к инвестициям</h3>
+                  <p class="blog-card__excerpt">Стратегия роста на базе инноваций, позволяющая масштабировать проект без увеличения операционной нагрузки.</p>
+                  <a href="#contact" class="blog-card__link">Читать далее <i data-lucide="arrow-up-right"></i></a>
+              </div>
+          </article>
+
+          <article class="blog-card">
+              <div class="blog-card__image">
+                  <img src="img/placeholder.png" alt="Market Trends">
+                  <span class="blog-card__category">Консалтинг</span>
+              </div>
+              <div class="blog-card__body">
+                  <div class="blog-card__meta">
+                      <span class="blog-card__date">05 Января, 2026</span>
+                      <span class="blog-card__read">6 мин чтения</span>
+                  </div>
+                  <h3 class="blog-card__title">Платформа года: почему экспертная поддержка важна на каждом этапе</h3>
+                  <p class="blog-card__excerpt">Как найти проверенного партнера в странах ЕС и избежать типичных ошибок при расширении горизонтов проекта.</p>
+                  <a href="#contact" class="blog-card__link">Читать далее <i data-lucide="arrow-up-right"></i></a>
+              </div>
+          </article>
+      </div>
+  </div>
+</section>
+<section id="cases" class="cases section-padding">
+  <div class="container">
+      <div class="section-header">
+          <span class="section-tag">Результаты</span>
+          <h2 class="section-title">Кейсы: от стратегии <br>к реальным цифрам</h2>
+          <p class="section-description">
+              Реальные истории успеха наших клиентов в Лондоне, Бирмингеме и Манчестере. Проверенные методологии, доказавшие эффективность.
+          </p>
+      </div>
+
+      <div class="cases__grid">
+          <div class="case-card">
+              <div class="case-card__header">
+                  <span class="case-card__industry">FinTech | London</span>
+                  <h3 class="case-card__title">Масштабирование цифровой инфраструктуры</h3>
+              </div>
+              <div class="case-card__stats">
+                  <div class="stat-item">
+                      <span class="stat-item__value">+240%</span>
+                      <span class="stat-item__label">Рост прибыли</span>
+                  </div>
+                  <div class="stat-item">
+                      <span class="stat-item__value">6 мес</span>
+                      <span class="stat-item__label">Срок внедрения</span>
+                  </div>
+              </div>
+              <p class="case-card__description">
+                  Внедрение AI-инструментов для автоматизации отчетности позволило компании переосмыслить подход к управлению активами.
+              </p>
+              <div class="case-card__footer">
+                  <span class="case-card__tag">#AI_Integration</span>
+                  <span class="case-card__tag">#Growth</span>
+              </div>
+          </div>
+
+          <div class="case-card">
+              <div class="case-card__header">
+                  <span class="case-card__industry">E-commerce | Manchester</span>
+                  <h3 class="case-card__title">Программа пассивного дохода и лояльности</h3>
+              </div>
+              <div class="case-card__stats">
+                  <div class="stat-item">
+                      <span class="stat-item__value">£1.2M</span>
+                      <span class="stat-item__label">Доп. доход</span>
+                  </div>
+                  <div class="stat-item">
+                      <span class="stat-item__value">15%</span>
+                      <span class="stat-item__label">Снижение издержек</span>
+                  </div>
+              </div>
+              <p class="case-card__description">
+                  Разработка новой стратегии роста на базе инноваций для ритейл-сети, открывшая новые горизонты проекта на рынке ЕС.
+              </p>
+              <div class="case-card__footer">
+                  <span class="case-card__tag">#Strategy</span>
+                  <span class="case-card__tag">#Retail_Tech</span>
+              </div>
+          </div>
+
+          <div class="case-card">
+              <div class="case-card__header">
+                  <span class="case-card__industry">SaaS | Birmingham</span>
+                  <h3 class="case-card__title">Выход на международную платформу года</h3>
+              </div>
+              <div class="case-card__stats">
+                  <div class="stat-item">
+                      <span class="stat-item__value">45+</span>
+                      <span class="stat-item__label">Новых партнеров</span>
+                  </div>
+                  <div class="stat-item">
+                      <span class="stat-item__value">x3</span>
+                      <span class="stat-item__label">Объем рынка</span>
+                  </div>
+              </div>
+              <p class="case-card__description">
+                  Экспертная поддержка на всех этапах экспансии. Подключение заняло 2 минуты, а результат изменил правила игры в нише.
+              </p>
+              <div class="case-card__footer">
+                  <span class="case-card__tag">#Expansion</span>
+                  <span class="case-card__tag">#SaaS</span>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<section id="contact" class="contact section-padding">
+  <div class="container">
+      <div class="contact__grid">
+          <div class="contact__info">
+              <span class="section-tag">Связь с нами</span>
+              <h2 class="section-title">Готовы расширить <br>горизонты проекта?</h2>
+              <p class="section-description">
+                  Оставьте заявку на бесплатную консультацию по всем вопросам. Наши эксперты свяжутся с вами в течение 24 часов.
+              </p>
+
+              <div class="contact__methods">
+                  <div class="contact-item">
+                      <div class="contact-item__icon"><i data-lucide="mail"></i></div>
+                      <div>
+                          <span class="contact-item__label">Пишите нам</span>
+                          <a href="mailto:team@hyperq-markz.fit" class="contact-item__link">team@hyperq-markz.fit</a>
+                      </div>
+                  </div>
+                  <div class="contact-item">
+                      <div class="contact-item__icon"><i data-lucide="phone"></i></div>
+                      <div>
+                          <span class="contact-item__label">Звоните</span>
+                          <a href="tel:+442079460123" class="contact-item__link">+44 20 7946 0123</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="contact__form-wrapper">
+              <form id="contact-form" class="contact-form">
+                  <div class="form-group">
+                      <input type="text" name="name" id="name" placeholder="Ваше имя" required>
+                  </div>
+
+                  <div class="form-group">
+                      <input type="email" name="email" id="email" placeholder="Email адрес" required>
+                  </div>
+
+                  <div class="form-group">
+                      <input type="tel" name="phone" id="phone" placeholder="Телефон (только цифры)" required>
+                  </div>
+
+                  <div class="form-captcha">
+                      <label for="captcha" id="captcha-label">Сколько будет 5 + 3?</label>
+                      <input type="text" id="captcha-input" placeholder="Ответ" required>
+                  </div>
+
+                  <div class="form-checkbox">
+                      <input type="checkbox" id="agreement" required>
+                      <label for="agreement">Я согласен с <a href="./personal-data-policy.html">политикой обработки данных</a></label>
+                  </div>
+
+                  <button type="submit" class="btn btn--primary btn--full">
+                      <span>Отправить запрос</span>
+                      <i data-lucide="send"></i>
+                  </button>
+
+                  <div id="form-status" class="form-status"></div>
+              </form>
+          </div>
+      </div>
+  </div>
+</section>
+    </div>
     </main>
 
     <footer class="footer">
   <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+      <div class="footer__grid">
+          <div class="footer__info">
+              <a href="/" class="logo logo--footer">Hyperq<span>Markz</span></a>
+              <p class="footer__tagline">Инновационная технология стратегического роста и передовая цифровая инфраструктура для вашего бизнеса.</p>
+          </div>
+
+          <div class="footer__nav-group">
+              <h4 class="footer__title">Навигация</h4>
+              <ul class="footer__links">
+                  <li><a href="#hero">Главная</a></li>
+                  <li><a href="#analytics">Аналитика</a></li>
+                  <li><a href="#methods">Методы</a></li>
+                  <li><a href="#insights">Инсайты</a></li>
+              </ul>
+          </div>
+
+          <div class="footer__legal">
+              <h4 class="footer__title">Документы</h4>
+              <ul class="footer__links">
+                  <li><a href="privacy.html">Privacy Policy</a></li>
+                  <li><a href="cookies.html">Cookie Policy</a></li>
+                  <li><a href="terms.html">Terms of Service</a></li>
+                  <li><a href="return.html">Return Policy</a></li>
+                  <li><a href="disclaimer.html">Disclaimer</a></li>
+                  <li><a href="personal-data-policy.html">Data Policy</a></li>
+              </ul>
+          </div>
+
+          <div class="footer__contacts">
+              <h4 class="footer__title">Контакты</h4>
+              <ul class="contact-list">
+                  <li>
+                      <i data-lucide="map-pin"></i>
+                      <span>20-22 Wenlock Road, London, N1 7GU, United Kingdom</span>
+                  </li>
+                  <li>
+                      <i data-lucide="phone"></i>
+                      <a href="tel:+442079460123">+44 20 7946 0123</a>
+                  </li>
+                  <li>
+                      <i data-lucide="mail"></i>
+                      <a href="mailto:team@hyperq-markz.fit">team@hyperq-markz.fit</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+
+      <div class="footer__bottom">
+          <p>&copy; 2026 Hyperq-Markz. Все права защищены. Предложение активно только в странах ЕС.</p>
+      </div>
   </div>
 </footer>
-
-
+    <div id="cookie-popup" class="cookie-popup">
+      <div class="cookie-popup__content">
+          <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.html">Cookie политике</a>.</p>
+          <button id="accept-cookies" class="btn btn--primary btn--small">Принять</button>
+      </div>
+  </div>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
   </body>
 </html>
